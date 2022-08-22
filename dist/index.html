@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+  </head>
+  <body class="body"> 
+    <header class="header"> 
+      <div class="logo"><img class="logo__img" src="img/logo.png" alt=""></div>
+      <div class="auth auth_align_center">
+        <div class="auth__container"> 
+          <form class="auth__form" action="">  
+            <p class="auth__title">Log in to airSlate</p>
+            <label class="auth__label">Email address<br>
+              <input class="auth__input auth__input_email" placeholder="Input" name="email" type="email">
+            </label>
+            <label class="auth__label">Password<br>
+              <input class="auth__input auth__input_password" placeholder="Input" name="password" type="password" required>
+            </label>
+            <div class="auth__policy">By clicking Log in, you agree to the <a class="policy__link" link="">Terms of Services </a>and <a class="policy__link" link="">Privacy Policy</a>, including receipt of emails from of us about our service.</div>
+            <button class="auth__submit" type="submit">Log in</button>
+            <div class="auth__prescription"> <span class="auth__prescription__text">or continue with your social accounts</span></div>
+            <div class="auth-media">
+              <button class="auth-media__btn" href=""> <img class="auth-media__img" src="img/Icons/Facebook-login.png" alt=""><span class="auth-media__title">Facebook</span></button>
+              <button class="auth-media__btn" href=""> <img class="auth-media__img" src="img/Icons/Google-login.png" alt=""><span class="auth-media__title">Google</span></button>
+              <button class="auth-media__btn">  <img class="auth-media__img" src="img/Icons/Apple-login.png" alt="">
+                <div class="auth-media__title">Apple</div>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <script src="js/jquery.min.js"> </script>
+    <script src="js/jquery.validate.min.js"> </script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>

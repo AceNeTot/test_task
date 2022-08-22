@@ -9,6 +9,5 @@ export const html = async () => {
         })))
         .pipe(pug({ pretty: true, verbose: true, }))
         .pipe(app.plugins.replace(/@img\//g, 'img/'))
-        .pipe(webpHtmlNosvg())
         .pipe(app.gulp.dest(app.path.build.html));
 }

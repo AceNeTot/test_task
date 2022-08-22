@@ -2,12 +2,50 @@ doctype html
 html(lang="en")
    head
       meta(charset="UTF-8")
-      meta(http-equiv="X-UA-Compatible", content="IE=edge")
-      meta(name="viewport", content="width=device-width, initial-scale=1.0")
-      link(rel="stylesheet", href="css/main.css")
+      meta(http-equiv="X-UA-Compatible" content="IE=edge")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap")
+      link(rel="stylesheet" href="css/main.css")
       title Document
+      
+   body.body 
+      header.header 
+         .logo
+            img.logo__img(src="@img/logo.png", alt="") 
+         .auth.auth_align_center
+            .auth__container 
+               form.auth__form(action="")   
+                  p.auth__title Log in to airSlate
+                  label.auth__label Email address
+                     br
+                     input.auth__input.auth__input_email(placeholder="Input" name="email" type="email" )  
+                  label.auth__label Password
+                     br 
+                     input.auth__input.auth__input_password(placeholder="Input" name="password" type="password" required) 
+                  .auth__policy By clicking Log in, you agree to the 
+                     a.policy__link(link="") Terms of Services 
+                     | and 
+                     a.policy__link(link="") Privacy Policy
+                     | , including receipt of emails from of us about our service.
+                  button.auth__submit(type="submit") Log in
+                  .auth__prescription 
+                     span.auth__prescription__text or continue with your social accounts
+                  .auth-media
+                     button.auth-media__btn(href="") 
+                        img.auth-media__img(src="@img/Icons/Facebook-login.png", alt="")
+                        span.auth-media__title Facebook
 
+                     button.auth-media__btn(href="") 
+                        img.auth-media__img(src="@img/Icons/Google-login.png", alt="")
+                        span.auth-media__title Google
 
+                     button.auth-media__btn   
+                        img.auth-media__img(src="@img/Icons/Apple-login.png", alt="")    
+                        div.auth-media__title Apple
+
+      
+      
+      
       script(src="js/jquery.min.js") 
+      script(src="js/jquery.validate.min.js") 
       script(src="js/main.js") 
-   body 
